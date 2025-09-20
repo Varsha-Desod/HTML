@@ -6,6 +6,75 @@
     <title>Form Tag </title>
 </head>
 <body>
-    Form:- 
+    Form:- From are allow user to input data and submit it. <br>
+    There are two method of form <br>
+    1. GET (which is not secure because when user give input like username and password in the address field the usernameand password are shown thats why its not secure). <br>
+    2. POST (which is secure because when user give input in address field the given data are not shown thats why its not secure). <hr>
+    Some Important attributes:- <br>
+    1. Action attribute :- used to get path of that file which holds the database or from where send sent or store the data in the form. <br>
+    2. Required attribute :- used to when user are forgot or not field any input and submit the form this attribute can't submitted the form and show the red color error that "THIS IS IMPORTANT FIELD PLEASE FILL IT ". <br>
+    3. Placeholder attribute :- used to show hint in side the placeholder.<br>
+    4. maxlength :- used to control the mximum length of a character and number.<br>
+    5. rows :- used to provide limited rows in a address field. <br>
+    6. cols :- used to provide limited column in a address field. <br> 
+    7. fieldset Tag :- is used to create a box or a line with text using legend tag. <br> 
+    8. select tag :- used to create drop down list field.<br> 
+    9. option tag :- used to create drop down list.<br> 
+    10. textarea tag :- used to create a area for address<br> <br>
+
+    <hr>
+
+    <form action="" method="post">
+        <fieldset>
+        <legend>Form</legend>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Enter the name" required="Please enter your name"><br>
+        <label for="email">Email Id:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email id" required="Please enter youe email"><br>
+        <label for="number">Number:</label>
+        <input type="number" name="" id=""><br>
+        <label for="number">Phone no.:</label>
+        <select name="country code" id="">
+        <option>+91</option>
+        <option>+93</option>
+        <option>+54</option>
+        <option>+61</option>
+        <option>+43</option>
+        <option>+501</option>
+        </select>
+        <input type="tel" name="" id="" maxlength="10" required="Please enter your number"><br>
+        <label for="address">Address:</label>
+        <textarea name="" id="" rows="5" cols="50"></textarea><br>
+        <label for="gender" name="gender">Gender:</label>
+        <input type="radio" name="gender">Male 
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Others <br>
+        <label for="checkbox" name="">Hobbies:</label>
+        <input type="checkbox">Football
+        <input type="checkbox">Cooking
+        <input type="checkbox">Dancing
+        <input type="checkbox">Singing
+        <input type="checkbox">Reading <br>
+        <label for="brithday">DOB:</label>
+        <input type="date" name="" id=""><br>
+        <label for="Date and Time">Date and Time:</label>
+        <input type="datetime" name="" id=""><br>
+        <label for="datetime">Date and Time with Zone</label>
+        <input type="datetime-local" name="" id=""><br>
+        <label for="color">Color:</label>
+        <input type="color" name="" id=""><br>
+        <label for="file">File:</label>
+        <input type="file" name="" id=""> <br>
+        <label for="password">Password :</label>
+        <input type="password" name="password" id=""><br>
+        <label for="range">Range :</label> 50
+        <input type="range" name="" id="">5000 <br>
+        <label for="search">Search :</label>
+        <input type="search" name="" id=""> <br>
+        <input type="reset" value="reset">
+        <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
 </body>
 </html>
